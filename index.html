@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Amarilda's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("navbar");
+        var y = document.querySelector(".remove");
+        var z= document.querySelector(".toggle");
+        if (x.style.display === "flex") {
+          x.style.display = "none";
+         //   y.style.display="block";
+          //  z.style.display="none";
+
+        } else {
+          x.style.display = "flex";
+          x.style.flexDirection= "column";
+          z.style.display="none";
+          y.style.display="flex"
+        }
+      }
+
+      function closeToggle(){
+        var nav = document.getElementById("navbar");
+        var y = document.querySelector(".remove");
+        var z= document.querySelector(".toggle");
+        if (nav.style.display === "flex") {
+          nav.style.display = "none";
+          y.style.display="none";
+          z.style.display="flex";
+        }
+        else{
+          x.style.display="none";
+          z.style.display="block";
+        }
+      }
+
+
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <div class="logo-toggle">
+          <div class="logo">
+            <img src="img/logo.png" alt="Logo" style="height: 70px" />
+          </div>
+          <div class="toggle">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          <div class="remove" id="remove">
+            <a href="jascript:void(0);" class="x" onclick="closeToggle()">
+              &times;
+            </a>
+          </div>
+        </div>
+        <div class="navbar" id="navbar">
+          <a href="#aboutme">About me</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact" class="active">CONTACT ME</a>
+        </div>
+      </div>
+      <div class="page_body">
+        <div class="intro">
+          <div class="text">
+            <p>Hi, I am</p>
+            <h1>Amarilda Cikalleshi</h1>
+            <p style="color: #909090"><b>Full-stack Developer</b></p>
+          </div>
+          <div class="icons">
+            <a href="mailto:amarildacikalleshi@gmail.com" target="_blank"><i class="fa fa-envelope" style="font-size:24px"></i>
+            </i> </a>
+            <a href="https://github.com/amacikalleshi" target="_blank"
+              ><i class="fa fa-github" style="font-size: 24px"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/amarilda-cikalleshi-3373201b2/"
+              target="_blank"
+              ><i class="fa fa-linkedin-square" style="font-size: 24px"></i>
+            </a>
+          </div>
+        </div>
+        <div class="info">
+            <div class="info_left">
+                <h2>IT BERRIES</h2>
+                <p>I am one of the members of a scientific club that brings together enthusiasts of the Internet and new technologies. At ITberries, we design and develop websites and web applications. Apart from the projects, our biggest undertaking is the Ciemna Strona UX conference, which we are organizing for the sixth time. Working in a club as a Front-End Developer definitely developed my skills in group work and working under time pressure. If you want to know more about us, click the button below! </p>
+                <a href="">READ MORE</a>
+            </div>
+            <div class="info_right">
+                <img src="img/LogoITB.png" alt="">
+            </div>
+        </div>
+      
+        <div class="about">
+            <div class="aboutme" id="aboutme">
+                <h2>ABOUT ME</h2>
+                <p>My name is Tomasz Gajda, I'm a third year Applied Computer Science student at the AGH University of Science and Technology in Krakow. I have been learning Front-End technologies for a year and this time was just enough for me to make sure that this is my place in the industry.
+                    Membership in the science club developed my design skills, which quickly turned into a new hobby. I am fluent in English (spoken and written) and intermediate Spanish. Apart from designing and programming websites, my passion is all kinds of motorsport - from rallies to the very king of motorsport - formula 1.</p>
+                <h3>EXPLORE</h3>
+                <img src="img/separator.png" alt="">
+                <div class="explore">
+                    <div class="explore1">
+                        <div class="design">
+                            <div class="title">
+                                <img src="img/design.png" alt="">
+                                <h3>DESIGN</h3>
+                            </div>
+                            <p>I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.</p>
+                        </div>
+                        <div class="development">
+                            <div class="title">
+                                <img src="img/development.png" alt="">
+                                <h3>DEVELOPMENT</h3>
+                            </div> 
+                            <p>Based on a project created by me or another one, sent by you, I can program the website to be fully functional and responsive.                            </p>
+                        </div>
+                    </div>
+                    <div class="explore2">
+                        <div class="title">
+                            <img src="img/maintenance.png" alt="">
+                            <h3>MAINTENANCE</h3>
+                        </div>
+                        <p>In case of any problems or the need for changes, I can introduce new functionalities and solutions.                        </p>
+                    </div>
+                </div>
+                <img src="img/separator.png" alt="">
+            </div>
+        
+          <div class="skills" id="skills">
+              <div class="skill">
+                  <h2>SKILLS</h2>
+              </div>
+              <h2>USING NOW:</h2>
+
+               <div class="using">
+                   <div class="card">
+                      <img src="img/html.svg" alt="">
+                       <p>HTML5</p>
+                  </div>
+                  <div class="card">
+                      <img src="img/css.svg" alt="">
+                      <p>CSS3</p>
+                  </div>
+                  <div class="card">
+                      <img src="img/javascript.svg" alt="">
+                      <p>JAVASCRIPT</p>
+                  </div>
+                  <div class="card">
+                      <img src="img/sass.svg" alt="">
+                      <p>SASS</p>
+                  </div>
+                  <div class="card">
+                      <img src="img/react.svg" alt="">
+                      <p>REACT</p>
+                  </div>
+                  <div class="card">
+                      <img src="img/bootstrap.svg" alt="">
+                      <p>BOOTSTRAP</p>
+                  </div>
+                  <div class="card">
+                      <img src="img/git.svg" alt="">
+                      <p>GIT</p>
+                  </div>
+                  <div class="card">
+                      <img src="img/figma.svg" alt="">
+                      <p>FIGMA</p>
+                  </div>
+              </div>
+              <h2>LEARNING:</h2>
+              <div class="learning">
+                <div class="card">
+                  <img src="img/nodejs.png" alt="">
+                  <p>NODEJS</p>
+                </div>
+                <div class="card">
+                  <img src="img/mysql.svg" alt="">
+                  <p>MySQL</p>
+                </div>
+                <div class="card">
+                  <img src="img/typescript.png" alt="">
+                  <p>TYPESCRIPT</p>
+                </div>
+                <div class="card">
+                  <img src="img/mongodb.png" alt="">
+                  <p>MONGODB</p>
+                </div>
+              </div>
+              <h2>OTHER SKILLS:</h2>
+              <div class="other">
+                <div class="card">
+                  <img src="img/english.svg" alt="">
+                  <p>ENGLISH</p>
+                </div>
+                <div class="card">
+                  <img src="img/c.svg" alt="">
+                  <p>C++</p>
+                </div>
+              </div>
+          </div>
+          <div class="contact" id="contact">
+            <h2>CONTACT</h2>
+            <p>My name is Tomasz Gajda, I’m a third year Applied Computer Science student at AGH University of Science and Technology in Cracow, Poland.</p>
+            <img src="img/separator.png" alt="">
+            <form action="">
+                <input type="text" id="name" placeholder="ENTER YOUR NAME*" required>
+                <input type="email" id="email" placeholder="ENTER YOUR EMAIL*" required>
+                <input type="number" id="phonenumber" placeholder="PHONE NUMBER">
+                <textarea name="message" id="message" placeholder="YOUR MESSAGE*" style="height:200px" required></textarea>
+                <input type="submit" value="SUBMIT" id="submit">
+            </form>
+          </div>
+      </div>
+      <div class="footer">
+        <a href="#">
+          <img src="img/ic_baseline-double-arrow.svg" alt="">
+          <p>BACK TO TOP</p>
+        </a>
+        <div class=""></div>
+        <p> <b>@2024 Amarilda Cikalleshi</b> All Rights Reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>
